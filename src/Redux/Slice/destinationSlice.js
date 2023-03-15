@@ -19,13 +19,23 @@ const initalState = () => {
                 fact: "When everything else has seen already",
             },
         ],
+        destinationSelected: null,
     };
 };
 
 export const destinationSlice = createSlice({
     name: "destination",
     initialState: initalState,
-    reducers: {},
+    reducers: {
+        destinationClicked: (state, action) => {
+            state.destinationSelected = action.payload;
+        },
+        resetDestination: (state) => {
+            state.destinationSelected = null;
+        },
+    },
 });
 
+export const { destinationClicked, resetDestination } =
+    destinationSlice.actions;
 export const destinationReducer = destinationSlice.reducer;
