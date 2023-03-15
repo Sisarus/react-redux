@@ -5,7 +5,7 @@ import {
     decrement,
     incrementMultiplier,
     decrementMultiplier,
-} from "../Redux/Slice/counterSlice";
+} from "../Redux/store";
 
 
 function Counter() {

@@ -1,6 +1,16 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { counterReducer } from "./Slice/counterSlice";
 import { destinationReducer } from "./Slice/destinationSlice";
+import {
+    increment,
+    decrement,
+    incrementMultiplier,
+    decrementMultiplier,
+} from "./Slice/counterSlice";
+import {
+    destinationClicked,
+    resetDestination,
+} from "./Slice/destinationSlice";
 
 export const store = configureStore({
     reducer: {
@@ -17,3 +27,12 @@ export const store = configureStore({
 // console.log(store.getState());
 
 console.log(store.getState());
+
+export {
+    increment,
+    decrement,
+    incrementMultiplier,
+    decrementMultiplier,
+    destinationClicked,
+    resetDestination,
+};

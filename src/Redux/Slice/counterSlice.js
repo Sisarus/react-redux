@@ -38,6 +38,5 @@ export const {
     decrement,
     decrementMultiplier,
     incrementMultiplier,
-    resetCounter,
 } = counterSlice.actions;
 export const counterReducer = counterSlice.reducer;
