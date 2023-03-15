@@ -7,7 +7,7 @@ function ResetApp() {
     const dispatch = useDispatch();
 
     const resetCounterAndDestination = () => {
-        dispatch(resetCounter());
+        //dispatch(resetCounter());
         dispatch(resetDestination());
     };
     return (
