@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { counterReducer } from "./Slice/counterSlice";
+import { destinationReducer } from "./Slice/destinationSlice";
 
 export const store = configureStore({
     reducer: {
         counterStore: counterReducer,
+        destinationStore: destinationReducer,
         // will fill later
     },
 });
@@ -13,3 +15,5 @@ export const store = configureStore({
 //     type: "counter/increment",
 // });
 // console.log(store.getState());
+
+console.log(store.getState());
