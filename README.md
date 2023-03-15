@@ -1,3 +1,6 @@
+How React and Redux work
+
+### `npm install`
 ### `npm start`
 
 Runs the app in the development mode.\
