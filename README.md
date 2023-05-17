@@ -1,4 +1,4 @@
-### How React and Redux work
+# How React and Redux work
 
 ## General
 
